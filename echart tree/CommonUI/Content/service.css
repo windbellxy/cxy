@@ -1,0 +1,351 @@
+﻿html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    /*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
+    /*font-family: '微软雅黑';*/
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444444;;
+    font-size: 14px;
+    background: #fff;
+    /*min-width: 1200px;*/
+}
+
+.b-container {
+    width: 100%;
+    /*min-width: 1000px;*/
+    float: left;
+    /*position: relative;*/
+}
+.de-title{
+   padding-left: 10px;
+    line-height: 35px;
+    /*background: #f0ad4e;*/
+}
+.dotted-title{
+    height: 10px;
+    border-bottom:2px dotted #d0d0d0;
+    position: relative;
+    margin-bottom: 20px;
+}
+.dotted-title span{
+  display: inline-block;
+    padding: 0 5px 0 0;
+    background: #fff;
+
+}
+
+.t-input {
+    font-size: 12px;
+    width: 150px;
+    height: 28px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    /*outline: none;*/
+    box-sizing: border-box;
+    padding: 2px 12px;
+    /*behavior: url(../css/ie-css3.htc);*/
+}
+
+.t-input:hover {
+    border: 1px solid #badbff;
+    -moz-box-shadow: #badbff 0px 0px 5px;
+    -webkit-box-shadow: #badbff 0px 0px 5px;
+    box-shadow: #badbff 0px 0px 5px;
+}
+.t-input.bg-gray{
+    background: #ebebeb
+}
+.t-textarea{
+    font-size: 12px;
+    width: 550px;
+    height: 80px;
+    display: inline-block;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+.e-btn {
+    /*font-size: 16px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+    /*color: #666;*/
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.e-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+.t-btn {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    background: #1476d2;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+.t-btn:hover {
+    background: #1267b8;
+    color: #fff;
+}
+.e-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+.lt-tab{
+
+}
+.lt-tab>li{
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.lt-tab>li.active{
+    background: #3192cb;
+   border-radius: 5px 5px 0  0;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+}
+.lt-tab-content{
+
+}
+.lt-tab-content>li{
+display: none;
+}
+.lt-tab-tag{
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 8px;
+}
+.eo-btn {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -5px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.eo-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+.eo-btn.blue {
+    background: #4d77ad;
+    color: #fff;
+}
+
+
+.search-box {
+    width: 160px;
+    height: 28px;
+    margin-left: 10px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box i {
+    line-height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+
+}
+
+.search-box input {
+    background: none;
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    outline:none;
+}
+.select-tab-title{
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.select-tab-box{
+    display: inline-block;
+}
+.select-tab-box li{
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.select-tab-box li:hover{
+    background: #1890ff;
+    border-radius: 5px;
+    color: #fff;
+}
+.select-tab-box li.active{
+    background: #1890ff;
+    border-radius: 5px;
+    color: #fff;
+}
+.over-tab{
+    height: 35px;
+    /*height: auto;*/
+    overflow: hidden;
+}
+.open-tab{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color:#1890ff ;
+    cursor: pointer;
+}
+.sort-box{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.model-ul{
+}
+
+.model-ul>li{
+    width: 22.5%;
+    margin:15px 0 0 2% ;
+    float: left;
+}
+.model-add, .model-import{
+    width: 100%;
+    float: left;
+    background: #fff;
+    text-align: center;
+    color: #666;
+    height: 140px;
+    line-height: 130px;
+    cursor: pointer;
+    border:2px dashed #d5d5d5 !important;
+    border-radius: 3px;
+}
+.model-add i, .model-import i{
+    font-size:60px;
+    color: #ebebeb;
+}
+.model-add:hover, .model-import:hover{
+
+    border:2px dashed #1890ff !important;
+}
+.model-box{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    border:1px solid #d5d5d5;
+    /*background: #eefaff;*/
+    background: #fff;
+    color: #666;
+    position: relative;
+    -moz-box-shadow:0px 0px 3px rgba(102,102,102,.2); /* 老的 Firefox */
+    box-shadow: 0px 0px 3px rgba(102,102,102,.2);
+    border-radius: 3px;
+}
+.model-box:hover{
+    border:1px solid #1890ff;
+}
+.model-box.active{
+    border:1px solid #1a3f85;
+    background: #eefaff;
+}
+.model-box:link{
+    color: #333;
+}
+.model-content{
+    padding: 8px;
+    font-size: 12px;
+}
+.mark-tl{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    /*width: 70px;*/
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding:0 5px;
+
+    background: #e6f7ff;
+
+}
+.mark-tm{
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.mark-tr{
+    position: absolute;
+    right:10px;
+    top:0px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.mark-bl{
+    position: absolute;
+    left:5px;
+    bottom: 0px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+.mark-br{
+    position: absolute;
+    right:10px;
+    bottom: 0px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.oper-item{
+    position: absolute;
+    left:-10px;
+    top: 20px;
+    width: 80px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    z-index: 99;
+}
+.oper-item li{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+.oper-item li:hover{
+    background: #def4fb;
+}

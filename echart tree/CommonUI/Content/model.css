@@ -1,0 +1,531 @@
+﻿html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    /*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
+    /*font-family: '微软雅黑';*/
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444444;;
+    font-size: 12px;
+    background: #f8f8f8;
+    min-width: 1000px;
+}
+
+.b-container {
+    width: 100%;
+    /*min-width: 1000px;*/
+    float: left;
+    /*position: relative;*/
+}
+
+.t-input {
+    font-size: 12px;
+    width: 150px;
+    height: 28px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #f8f8f8;
+    border: 1px solid #d5d5d5;
+    /*outline: none;*/
+    box-sizing: border-box;
+    padding: 2px 12px;
+    /*behavior: url(../css/ie-css3.htc);*/
+}
+
+.t-input:hover {
+    border: 1px solid #badbff;
+    -moz-box-shadow: #badbff 0px 0px 5px;
+    -webkit-box-shadow: #badbff 0px 0px 5px;
+    box-shadow: #badbff 0px 0px 5px;
+}
+.t-input-search{
+
+    background: #fff url("../../images/icon_search.png") no-repeat scroll right center;
+}
+.l-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px double #d5d5d5;
+    float: left;
+    /*overflow-y: auto;*/
+    /*overflow-x: hidden;*/
+
+
+}
+
+.m-box {
+    position: fixed;
+    left: 200px;
+    right: 200px;
+    height: 100%;
+    display: inline-block;
+    margin-top: 0;
+    /*width:calc(100% - 370px);*/
+    float: left;
+    overflow-y: auto;
+}
+
+.r-box {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    border-left: 1px double #d5d5d5;
+    float: right;
+}
+.tree-box{
+    position: fixed;
+    right: 0;
+    top: 35px;
+    bottom: 0;
+    width: 198px;
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sidebar-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+    line-height: 33px;
+    margin-top: 1px;
+    background: #f2f4f7;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.sidebar-top i {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar-top-close {
+    position: fixed;
+    left: -2px;
+    top: 0;
+    width: 30px;
+    height: 33px;
+    line-height: 33px;
+    background: #242a33;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.sidebar-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+    line-height: 33px;
+    margin-top: 1px;
+    background: #f2f4f7;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.sidebar-right i {
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar-right-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+    line-height: 33px;
+    background: #242a33;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.config-box {
+
+}
+
+.config-btn {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    color: #fff;
+    background: #3989f5;
+    cursor: pointer;
+    -moz-box-shadow: 1px 1px 20px #999; /* 老的 Firefox */
+    box-shadow: 1px 1px 20px #999;
+    z-index: 10001;
+}
+
+.config-btn i {
+
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.chartStyle {
+    width: 250px;
+    height: 530px;
+    background: #fff;
+    position: fixed;
+    right: 0px;
+    top: 10px;
+    border: 1px solid #e1e1e1;
+    -moz-box-shadow: 1px 1px 20px #ddd; /* 老的 Firefox */
+    box-shadow: 1px 1px 20px #ddd;
+    border-right: none;
+    z-index: 10000;
+}
+
+.l-title {
+
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    /*border-top: 1px solid #d5d5d5;*/
+    position: relative;
+    margin-bottom: 0;
+    background: #f5f5f5;
+    border-top: 1px solid #e6e7ea;
+    border-bottom: 1px solid #e6e7ea;
+    font-weight: bold;
+}
+
+.l-title-weidu {
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    background: #f2f4f7;
+    color: #333;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 0;
+
+}
+
+.l-title-param {
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    /*background: #f2f4f7;*/
+    background: #f5f5f5;
+    color: #333;
+    padding-left: 10px;
+}
+
+.l-title-weidu i, .l-title-param i {
+    color: #3989f5;
+}
+
+.l-title-tag {
+    position: absolute;
+    line-height: 40px;
+    right: 5px;
+    top: 0;
+    width: 30px;
+    height: 50px;
+    color: #3989f5;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+.l-title-span{
+    width: 150px;
+    display: inline-block;
+    /*background: #cde1ec;*/
+    border-radius: 4px 4px 0  0;
+    height: 28px;
+    line-height: 28px;
+    /*color: #fff;*/
+    padding: 0 20px 0 30px;
+    text-align: left;
+}
+.l-title-span i{
+    position: absolute;
+    line-height: 28px;
+    left: 15px;
+}
+.e-btn-group{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    /*background: #f0ad4e;*/
+}
+/*.e-btn-group i{*/
+    /*font-size: 16px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+    /*color: #666;*/
+/*}*/
+.e-btn {
+    /*font-size: 16px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+    /*color: #666;*/
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    /*background: #fff;*/
+    /*border: 1px solid #d5d5d5;*/
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+.e-btn i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.e-btn:hover {
+    /*background: #7a91c0;*/
+    color: #1890ff;
+}
+.lt-tab{
+
+}
+.lt-tab>li{
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.lt-tab>li.active{
+    background: #3192cb;
+   border-radius: 5px 5px 0  0;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+}
+.lt-tab-content{
+
+}
+.lt-tab-content>li{
+display: none;
+}
+.lt-tab-tag{
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 8px;
+}
+.weidu-list {
+
+}
+
+.weidu-list > li {
+    /*padding: 5px;*/
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.weidu-list li:hover {
+    /*background: #ececec;*/
+}
+
+.drag-down {
+    position: relative;
+}
+
+.drag-text {
+    width: 160px;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.drag-text-iconl {
+    position: absolute;
+    line-height: 40px;
+    left: 0px;
+}
+
+.drag-text-iconr {
+    position: absolute;
+    line-height: 40px;
+    right: 0px;
+    color: #666;
+}
+
+
+
+.drop-text {
+    width: 120px;
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    background: #3989f5;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 25px;
+    text-align: left;
+    position: relative;
+    /*border: 1px solid #d5d5d5;*/
+    cursor: pointer;
+}
+
+.search-box {
+    width: 160px;
+    height: 28px;
+    margin-left: 10px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box i {
+    line-height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.search-box input {
+    background: none;
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    outline:none;
+}
+
+.param-list {
+
+}
+
+.param-list li {
+
+}
+
+.param-list li:hover {
+    background: #e0e0e0;
+}
+
+.drag-item{
+    line-height: 30px;
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.drag-item .drag-row .really-text-r{
+    height: 20px;
+    line-height: 30px;
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.drag-item .drag-row:hover {
+    background: #e0e0e0;
+}
+.editor-box {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+
+.editor-console {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    position: relative;
+}
+.console-area{
+    width: 100%;
+    height: 240px;
+    padding: 5px;
+    border: none;
+}
+.e-oper {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+.e-oper * {
+    display: inline-block;
+}
+
+.eo-btn {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -5px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.eo-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+.eo-btn.blue {
+    background: #4d77ad;
+    color: #fff;
+}
+.drag-child{
+display: none;
+}
+.drag-child:hover{
+    background: #fff;
+
+}
+.drag-child>li{
+ padding-left: 10px;
+}
+.drag-child>li:hover{
+  background: #d7ecf3;
+}

@@ -1,0 +1,760 @@
+﻿html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    /*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
+    /*font-family: '微软雅黑';*/
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #444444;;
+    font-size: 14px;
+    background: #fff;
+    /*min-width: 1200px;*/
+}
+
+.b-container {
+    width: 100%;
+    /*min-width: 1000px;*/
+    float: left;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.back-btn i {
+    font-size: 16px;
+    color: #1890ff;
+}
+
+.de-title {
+    padding-left: 10px;
+    line-height: 35px;
+    /*background: #f0ad4e;*/
+}
+
+.dotted-title {
+    height: 10px;
+    border-bottom: 2px dotted #d0d0d0;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.dotted-title span {
+    display: inline-block;
+    padding: 0 5px 0 0;
+    background: #fff;
+
+}
+
+.t-input {
+    font-size: 12px;
+    width: 150px;
+    height: 28px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    /*outline: none;*/
+    box-sizing: border-box;
+    padding: 2px 12px;
+    /*behavior: url(../css/ie-css3.htc);*/
+}
+
+.t-input:hover {
+    border: 1px solid #badbff;
+    -moz-box-shadow: #badbff 0px 0px 5px;
+    -webkit-box-shadow: #badbff 0px 0px 5px;
+    box-shadow: #badbff 0px 0px 5px;
+}
+
+.t-input.bg-gray {
+    background: #ebebeb
+}
+
+.t-input.t-input-pos {
+    background: #fff url("../../images/icon_pos.png") no-repeat right 6px;
+}
+
+.t-textarea {
+    font-size: 12px;
+    width: 550px;
+    height: 80px;
+    display: inline-block;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+}
+
+.t-select {
+    width: 150px;
+    height: 28px;
+    line-height: 18px;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    /*outline: none;*/
+    cursor: pointer;
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #d5d5d5;
+    /*将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: #fff url("../../images/arrawb.png") no-repeat scroll right center;
+    /*background:none\0;*/
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+
+    padding: 3px 15px 3px 12px;
+    /*padding-right: 0px\0;*/
+}
+
+/*:root .t-select1 {
+    background: #f8f8f8 url("../images/arraw.png") no-repeat scroll right center;
+    padding-right: 14px;
+}*/
+.t-select:hover {
+    border: 1px solid #badbff;
+    -moz-box-shadow: #badbff 0px 0px 5px;
+    -webkit-box-shadow: #badbff 0px 0px 5px;
+    box-shadow: #badbff 0px 0px 5px;
+}
+
+.e-btn {
+    /*font-size: 16px;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+    /*color: #666;*/
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.e-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+
+.t-btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background: #1476d2;
+    color: #fff;
+    /*border: 1px solid #d5d5d5;*/
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.t-btn:hover {
+    background: #1267b8;
+    color: #fff;
+}
+
+.t-btn.bg-gray {
+    background: #f5f5f5;
+    border: 1px solid #d5d5d5;
+    color: #333;
+}
+
+.e-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+
+/*日期文本框*/
+.t-input-date {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    /*behavior: url(../css/ie-css3.htc);*/
+    padding: 0 12px;
+}
+
+.row-input {
+    font-size: 12px;
+    width: 80px;
+    height: 24px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    /*outline: none;*/
+    box-sizing: border-box;
+    padding: 2px 10px;
+    /*behavior: url(../css/ie-css3.htc);*/
+}
+
+.row-input:hover {
+    border: 1px solid #3192cb;
+}
+
+.row-btn {
+    /*width: 60px;*/
+    padding: 4px 15px;
+    text-align: center;
+    background: #3191cb;
+    border: 1px solid #3191cb;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+
+.row-btn:link {
+    color: #fff;
+}
+
+.row-btn:visited {
+    color: #fff;
+}
+
+.row-btn.bg-gray {
+    background: #f0f0f0;
+    color: #666;
+    border: 1px solid #d5d5d5;
+}
+
+.row-btn.bg-gray:hover {
+    background: #e0e0e0;
+    color: #666;
+    border: 1px solid #d5d5d5;
+}
+
+.lt-tab {
+
+}
+
+.lt-tab > li {
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.lt-tab > li.active {
+    background: #3192cb;
+    border-radius: 5px 5px 0 0;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.lt-tab-content {
+
+}
+
+.lt-tab-content > li {
+    display: none;
+}
+
+.lt-tab-tag {
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 8px;
+}
+
+.eo-btn {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -5px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+.eo-btn:hover {
+    background: #7a91c0;
+    color: #fff;
+}
+
+.eo-btn.blue {
+    background: #4d77ad;
+    color: #fff;
+}
+
+.aero-check {
+    /*width: 15px;*/
+    float: left;
+    /*display: inline-block;*/
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: left;
+    padding-left: 5px;
+    background: url(../../images/icon_checkbox.png) no-repeat left;
+    /*background-position: 0 29px;*/
+}
+
+/*.aero-check input[type=checkbox]{*/
+/*margin-right: 5px;*/
+/*}*/
+.aero-check-on {
+    /*background-position: 0 0;*/
+    background: url(../../images/icon_checkbox_on.png) no-repeat left;
+
+}
+
+/*复选*/
+.checkboxclass {
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.search-box {
+    width: 160px;
+    height: 28px;
+    margin-left: 10px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box i {
+    line-height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+
+}
+
+.search-box input {
+    background: none;
+    width: 150px;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+}
+
+.select-tab-title {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.select-tab-box {
+    display: inline-block;
+}
+
+.select-tab-box li {
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.select-tab-box li:hover {
+    background: #1890ff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.select-tab-box li.active {
+    background: #1890ff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.over-tab {
+    height: 35px;
+    /*height: auto;*/
+    overflow: hidden;
+}
+
+.open-tab {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: #1890ff;
+    cursor: pointer;
+}
+
+.sort-box {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.sep-item {
+    display: inline-block;
+    padding: 5px 10px;
+    border-left: 1px solid #999;
+    cursor: pointer;
+}
+
+.sep-item:hover {
+    background: #1890ff;
+    color: #fff;
+
+}
+
+.model-ul {
+}
+
+.model-ul > li {
+    width: 22.5%;
+    margin: 15px 0 0 2%;
+    float: left;
+}
+
+.model-add, .model-import {
+    width: 100%;
+    float: left;
+    background: #fff;
+    text-align: center;
+    color: #666;
+    height: 140px;
+    line-height: 130px;
+    cursor: pointer;
+    border: 2px dashed #d5d5d5 !important;
+    border-radius: 3px;
+}
+
+.model-add i, .model-import i {
+    font-size: 60px;
+    color: #ebebeb;
+}
+
+.model-add:hover, .model-import:hover {
+
+    border: 2px dashed #1890ff !important;
+}
+
+.model-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    border: 1px solid #d5d5d5;
+    /*background: #eefaff;*/
+    background: #fff;
+    color: #666;
+    position: relative;
+    -moz-box-shadow: 0px 0px 3px rgba(102, 102, 102, .2); /* 老的 Firefox */
+    box-shadow: 0px 0px 3px rgba(102, 102, 102, .2);
+    border-radius: 3px;
+}
+
+.model-box:hover {
+    border: 1px solid #1890ff;
+}
+
+.model-box.active {
+    border: 1px solid #1a3f85;
+    background: #eefaff;
+}
+
+.model-box:link {
+    color: #333;
+}
+
+.model-content {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.mark-tl {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /*width: 70px;*/
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    padding: 0 5px;
+
+    background: #e6f7ff;
+
+}
+
+.mark-tm {
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mark-tr {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.mark-bl {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.mark-br {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.oper-item {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 92px;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    z-index: 99;
+}
+
+.oper-item li {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.oper-item li:hover {
+    background: #def4fb;
+}
+
+.list-col {
+
+}
+
+.list-col > li {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+
+}
+
+.list-col > li > input[type="checkbox"] {
+    margin-top: -3px;
+    margin-right: 5px;
+
+}
+
+.editor-box {
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 4px 4px 0 0;
+    background: #fff;
+}
+
+.editor-console {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    position: relative;
+    border: 1px solid #d5d5d5;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.console-area {
+    width: 100%;
+    height: 115px;
+    padding: 5px;
+    border: none;
+}
+
+.short-table {
+
+}
+
+.short-table tbody tr td {
+    height: 30px;
+    line-height: 30px;
+}
+
+.h-title {
+    height: 30px;
+    line-height: 30px;
+    background: #f8f8f8;
+    padding-left: 10px;
+}
+
+.show-info {
+    border: 1px solid #1890ff;
+    background: #e6f7ff;
+    border-radius: 4px;
+    padding: 3px 5px;
+}
+
+.ver-progress {
+
+}
+
+.ver-progress * {
+    display: inline-block;
+}
+
+.ver-progress .ver-progress-wrap {
+    margin-top: 5px;
+    width: 400px;
+    height: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ver-progress .ver-progress-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 10px;
+    background: #1890ff;
+    border-radius: 5px;
+}
+
+.ver-progress .ver-progress-label {
+    position: absolute;
+    right: -35px;
+    top: -5px;
+}
+
+.box-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #d5d5d5;
+}
+
+.box-left {
+    position: fixed;
+    left: 0;
+    top: 45px;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #d5d5d5;
+}
+
+.box-right {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
+.add-icon {
+    font-size: 20px;
+    color: #999;
+}
+
+.theme-list {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.theme-list>li {
+    height: 40px;
+    line-height: 40px;
+    background: #e6f7ff;
+    color: #1890ff;
+    padding-left: 10px;
+    position: relative;
+}
+
+.theme-list>li .oper-btn {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    color: #666;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.temp-list{
+
+}
+.temp-list li{
+    width: 130px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.temp-list li img{
+    padding: 5px;
+}
+.temp-list li img:hover{
+  background: #e6f7ff;
+}
+.temp-list li.active img{
+    background: #e6f7ff;
+}
+
+.content-box{
+    position: relative;
+}
+.sec-model-chart{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 90%;
+    height: 400px;
+}
+.sec-model-ver-btn{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+
+.pri-level{
+ border-radius: 4px;
+}
+.pri-level li{
+  padding: 5px 10px;
+    float: left;
+    border: 1px solid #d5d5d5;
+    border-left: none;
+    background: #fff;
+    cursor: pointer;
+}
+.pri-level li:first-child{
+    border-left: 1px solid #d5d5d5;
+}
+.pri-level li.active{
+  background: #1890ff;
+    color: #fff;
+}
